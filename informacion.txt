@@ -1,0 +1,15 @@
+Este proyecto es generalmente un pequeño blog, la cual si no estás registrado no podrás publicar, 
+sin embargo, si estas registrado e inicias con tu cuenta, accedes para poder publicar.
+
+El principal objetivo de este proyecto es evitar un sql injection, la cual consiste en que si alguien 
+llegase a introducir un pequeño query en la sección de usuario, podrá acceder con esa misma cuenta 
+sin tener la necesidad de introducir la contraseña correcta.
+
+Dicho esto, en el código se  podrá observar el proceso que fue echo para evitar estos tipos de ataques.
+Para que el proyecto llegue  a funcionar correctamente, se tendrá que estar  en un servidor local y cargar 
+el archivo users.sql que se encuentra dentro de la carpeta, en un gestor de base de datos MySQL, 
+antes de cargar se deberá tener creado una base de datos llamada prácticas, 
+y posteriormente cargar el archivo ya mencionado.
+
+
+Cabe a aclarar que este proyecto no es un proyecto real, fue hecho para fines prácticos para un mejor desarrollo.
