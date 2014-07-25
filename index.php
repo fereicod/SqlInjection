@@ -14,7 +14,7 @@ if(isset($_POST['user']) && isset($_POST['password']))
 {
     //usuario y password de la DB
     $dbuser ='root';
-    $dbpassword ='admin';
+    $dbpassword ='root';
 
     //primero realizamos la conexión usando esta funcion
     $db = connect($dbuser,$dbpassword);

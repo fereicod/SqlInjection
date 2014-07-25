@@ -14,7 +14,7 @@ if(isset($_POST['user']) && isset($_POST['password']))
 {
     //usuario y password de la DB
     $dbuser ='root';
-    $dbpassword ='admin';
+    $dbpassword ='root';
 
     //primero realizamos la conexión usando esta funcion
     $db = connect($dbuser,$dbpassword);
@@ -339,7 +339,7 @@ function register($db)
             $db->beginTransaction();//iniciamos transacción DBO
             $db->exec($query); //ejecutamos la inserción de datos y el registro
             $db->commit();//terminamos la conexión exitosamente
-            echo "Registro completado\n su usuario:{$user} y su password:{$_POST['password']}".
+            echo "Registro completado\n su usuario:{$_POST['user']} y su password:{$_POST['password']}".
                   "\n Entre <a href=\"bienvenido.php\">Aqui</a> para ir a la pagina de bienvenida";
           } catch (Exception $e) {
             $db->rollBack(); //Si falla la conexión, tiramos la conexión
